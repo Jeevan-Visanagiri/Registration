@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <style>
+            form.registration-form
+            {
+                width: 75%;
+                margin-left: 12.5%;
+                margin-right: 12.5%;
+                border: 2px solid black;
+
+            }
+            div.registration-form
+            {
+                font-size: xx-large;
+                font-family: cursive;
+            }
+            input,select
+            {
+                width: 50%;
+                height: 50px;
+                font-family: cursive;
+                font-size: large;
+                text-align: left;
+                border-radius: 5px;
+            }
+            .material-icons
+            {
+                font-size: 50px;
+            }
+            button
+            {
+                width: 300px;
+                height: 50px;
+                text-align: center;
+                font-size: larger;
+                font-family: cursive;
+            }
+        </style>
+        <script src=main.js>
+
+        </script>
+
+    </head>
+    <body>
+        <form action="" method="GET" class="registration-form" onsubmit="alert('Thank you for submission ')" required>
+
+            <div class="registration-form">
+                <label for="Fullname">Full Name</label>
+                <i class="material-icons">account_box</i>
+                <input type="text" name="Fullname" id="Fullname" placeholder="Full Name" required>
+            </div>
+            <div class="registration-form">
+                <label for="Address1">Address Line 1</label>
+                <i class="material-icons">home</i>
+                <input type="text" name="Address1" id="Address1" placeholder="Address Line 1" required>
+            </div>
+            <div class="registration-form">
+                <label for="Address2">Address Line 2</label>
+                <i class="material-icons">home</i>
+                <input type="text" name="Address2" id="Address2" placeholder="Address Line 2" required>
+            </div>
+            <div class="registration-form">
+                <label for="City">City</label>
+                <i class="material-icons">home</i>
+                <input type="text" name="City" id="City" placeholder="City" required>
+            </div>
+            <div class="registration-form">
+                <label for="State">State/Province/Region</label>
+                <i class="material-icons">home</i>
+                <input type="text" name="State" id="State" placeholder="State/Province/Region" required>
+            </div>
+            <div class="registration-form">
+                <label for="Postal">Postal Code/ZIP</label>
+                <i class="material-icons">home</i>
+                <input type="number" name="Postal" id="Postal" placeholder="Postal Code/ZIP" required>
+            </div>
+            <div class="registration-form">
+                <label for="country">Country</label>
+                <i class="material-icons">list</i>
+                <select name="country" id="country" required>
+                    <option>A really long option to push the menu over</option>
+                    <option value="1">India</option>
+                    <option value="2">United states</option>
+                    <option value="3">United Kingdom</option>
+                </select>
+            </div>
+            <div class="registration-form">
+                <label for="Email">Email</label>
+                <i class="material-icons">email</i>
+                <input type="text" name="Email" id="Email" placeholder="Email" required>
+            </div>
+            <div class="registration-form">
+                <label for="Phone">Phone Number</label>
+                <i class="material-icons">call</i>
+                <input type="number" name="Phone" id="Phone" placeholder="Phone Number" required>
+            </div>
+            <div class="registration-form">
+                <input type="submit" value="submit">
+            </div>
+
+        </form>
+    </body>
+</html>
